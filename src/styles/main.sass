@@ -1,0 +1,39 @@
+@use 'variables'
+
+*
+  padding: 0
+  margin: 0
+  font-family: variables.$font-stack
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+
+body::-webkit-scrollbar
+  width: 0.4rem
+
+body::-webkit-scrollbar-track
+  background: transparent
+
+body::-webkit-scrollbar-thumb
+  background-color: #FC3D62
+  border-radius: 20px
+
+  &:hover
+    opacity: 0.6
+
+body
+  background-color: variables.$body-bg-color
+
+.video-bg
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  height: 100%
+
+video
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+a, svg
+  transition: 0.4s
